@@ -18,7 +18,7 @@ export default function Home() {
       const newData = {
         url: result.lighthouseResult.finalUrl,
         totalTiming: result.lighthouseResult.timing.total,
-        performance: result.scores.performance,
+        performance: result.scores.performance*100,
       };
 
       setAllData((prev) => [...prev, newData]);
